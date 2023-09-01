@@ -211,3 +211,65 @@ Selain itu, saat petang/malam hari cenderung terjadi kepadatan lalu lintas, dan 
 
 ## **Machine Learning Model**
 Ada 4 model machine learning yang diuji pada project ini yakni linear regresi, ridge regresi, random forest, dan xg-boost.
+
+### Linear Regresi 
+Pada hasil evaluasi model linear regresi didapatkan nilai evaluasi sebagai berikut:
+
+```Markdown
+# Train data
+RMSE = 0.29019903994329593
+R2 Score = 0.14446772031928723
+MAPE = 4.877%
+
+# Test data
+RMSE = 0.28848614914319315
+R2 Score = 0.13232407143778802
+MAPE = 4.858%
+```
+
+### Ridge Regresi
+Sedangkan hasil evaluasi train data dan test data pada ridge regresi todak berbeda dengan linear regresi yakni:
+
+```
+# Train data
+RMSE = 0.29019939823046553
+R2 Score = 0.14446560779384066
+MAPE = 4.877%
+
+# Test data
+RMSE = 0.2884971852407773
+R2 Score = 0.13225768392207027
+MAPE = 4.858%
+```
+
+### Random Forest 
+Pada pemodelan random forest ini terjadi sedikit overfit antara train data dan test data yang dapat dilihat pada hasil evaluasi berikut:
+
+```
+# Train data
+RMSE = 0.17799223987605087
+R2 Score = 0.6781551276808229
+MAPE = 3.155%
+
+# Test data
+RMSE = 0.21532699440350972
+R2 Score = 0.516602307479064
+MAPE = 3.823%
+```
+
+### XG-Boost
+Pemodelan ini merupakan pemodelan yang memiliki hasil evaluasi yang baik dan juga tidak terjadi overfit, bisa dibilang yang paling baik. Untuk nilai evaluasinya adalah sebagai berikut:
+
+```
+# Train data
+RMSE = 0.21111506503885205
+R2 Score = 0.5472245108243833
+MAPE = 3.787%
+
+# Test data
+RMSE = 0.2136957247407238
+R2 Score = 0.5238987920220157
+MAPE = 3.817%
+```
+
+Demikian penjelasan yang dapat saya sampaikan dari project yang saya buat ini, terimakasih sudah membaca.
